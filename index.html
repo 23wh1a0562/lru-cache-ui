@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LRU Cache Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Least Recently Used (LRU) Cache</h1>
+
+<div class="container">
+
+    <!-- Capacity -->
+    <div class="box">
+        <label>Cache Capacity:</label>
+        <input type="number" id="capacity" placeholder="Enter capacity">
+        <button onclick="setCapacity()">Set Capacity</button>
+    </div>
+
+    <!-- Key Value -->
+    <div class="box">
+        <label>Key:</label>
+        <input type="text" id="key">
+
+        <label>Value:</label>
+        <input type="text" id="value">
+
+        <button onclick="putValue()">Put (Add / Update)</button>
+        <button onclick="getValue()">Get (Access)</button>
+    </div>
+
+    <!-- Display -->
+    <div class="box cache-section">
+
+        <button onclick="printCache()">Cache</button>
+        <button onclick="resetCache()" class="reset-btn">Reset / Clear Cache</button>
+
+        <h3>Cache (Most Recent → Least Recent)</h3>
+        <p id="statusMessage"></p>
+
+        <div id="cacheDisplay"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

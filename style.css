@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f4f6f8, #e9eef3);
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+
+h1 {
+    color: #333;
+}
+
+.container {
+    width: 80%;          /* ✅ use 80% of screen */
+    max-width: 1100px;   /* ✅ don’t stretch too much */
+    margin: auto;
+}
+
+
+.box {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+input {
+    margin: 5px;
+    padding: 6px;
+}
+
+button {
+    padding: 6px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#cacheDisplay {
+    margin-top: 10px;
+    font-weight: bold;
+}
+#cacheDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+
+    flex-wrap: wrap;          /* ✅ allow wrapping */
+    gap: 8px;                 /* ✅ spacing between items */
+    max-width: 100%;          /* ✅ stay inside card */
+    overflow-x: auto;         /* ✅ safety */
+}
+
+
+
+.node {
+    padding: 8px 12px;
+    min-width: 70px;
+    text-align: center;
+
+    background: #4CAF50;
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+.arrow {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+
+.mru {
+    background: #2196F3; /* Blue */
+}
+
+.lru {
+    background: #F44336; /* Red */
+}
+.node:hover {
+    transform: scale(1.1);
+}
+#statusMessage {
+    font-weight: 600;
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+.reset-btn {
+    margin-left: 10px;
+    background: #f44336;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background: #d32f2f;
+}
+.cache-section {
+    background: #f9fbfd;
+    border: 1px solid #e0e6ed;
+}
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #34495e;
+}
